@@ -13,4 +13,9 @@ local Set = {
 	union = require(script.union),
 }
 
-return Set
+
+function Set:__call(tbl)
+	return setmetatable(tbl, { __index = Set })
+end
+
+return setmetatable({}, Set)
