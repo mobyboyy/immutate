@@ -1,6 +1,9 @@
 <h1 align="center">Immutate</h1>
-<h3 align="center">A Llama fork optimized for readability</h2>
+<h3 align="center">A Llama fork optimized for readability</h3>
 
+
+
+### Sample
 ```
 local Set = require(Immutate.Dictionary)
 
