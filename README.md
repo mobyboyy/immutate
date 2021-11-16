@@ -1,5 +1,5 @@
 <h1 align="center">Immutate</h1>
-<h3 align="center">A Llama fork optimized for readability</h3>
+<div align="center">A Llama fork optimized for readability</h3>
 
 
 
