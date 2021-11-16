@@ -18,4 +18,8 @@ function Set:__call(tbl)
 	return setmetatable(tbl, { __index = Set })
 end
 
+function Set:get()
+	return setmetatable(self:copy(), nil)
+end
+
 return setmetatable({}, Set)
