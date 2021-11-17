@@ -44,4 +44,12 @@ local List = {
 	zipAll = require(script.zipAll),
 }
 
+function List:__call(tbl)
+	return setmetatable(tbl, { __index = List })
+end
+
+function List:get()
+	return setmetatable(self:copy(), nil)
+end
+
 return List
