@@ -27,4 +27,12 @@ local Dictionary = {
 	values = require(script.values),
 }
 
+function Dictionary:__call(tbl)
+	return setmetatable(tbl, { __index = Dictionary })
+end
+
+function Dictionary:get()
+	return setmetatable(self:copy(), nil)
+end
+
 return Dictionary
