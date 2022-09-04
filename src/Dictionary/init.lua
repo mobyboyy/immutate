@@ -31,8 +31,8 @@ function Dictionary:__call(tbl)
 	return setmetatable(tbl, { __index = Dictionary })
 end
 
-function Dictionary:get()
+function Dictionary:unwrap()
 	return setmetatable(self:copy(), nil)
 end
 
-return Dictionary
+return setmetatable({}, Dictionary)
